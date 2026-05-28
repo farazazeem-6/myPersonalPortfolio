@@ -1,6 +1,6 @@
 import styles from "../Resume/Resume.module.css";
 import { RevealOnScroll } from "../Skills/Skill";
-import ResumeImg from "../../../public/resume.jpg";
+import ResumeImg from "../../../public/Faraz_Azeem_Resume.pdf";
 
 const handleEmailClick = () => {
   window.location.href = "mailto:farazazeem66@gmail.com";

@@ -3,7 +3,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import FullscreenExitIcon from "@mui/icons-material/FullscreenExit";
 import React, { useState, useRef, useEffect } from "react";
-import HeroImg from "../../../public/personal.jpeg";
+import HeroImg from "../../../public/IMG_8265.jpg";
 
 const style = {
   position: "absolute",

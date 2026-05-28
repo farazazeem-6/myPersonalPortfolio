@@ -27,8 +27,8 @@
 }
 
 .profileImage img {
-  width: 60px;
-  height: 70px;
+  width: 65px;
+  height: 60px;
   border-radius: 46%;
   background-color: var(--purple-button-color);
   border: 3px solid #7c3aed;

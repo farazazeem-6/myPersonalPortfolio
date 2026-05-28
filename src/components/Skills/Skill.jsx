@@ -121,26 +121,6 @@ function Skill() {
           </div>
         </RevealOnScroll>
 
-        {/* Backend Development */}
-        {/* <RevealOnScroll delay={0.2}>
-          <div className={styles.skillBoxes}>
-            <div style={{ position: "relative" }}>
-              <h3 className={styles.backend}>Backend Development</h3>
-              <AnimatedLine className={styles.backendLine} />
-            </div>
-            <div className={styles.boxes}>
-              {backEndSkills.map((obj, index) => (
-                <SkillCard
-                  key={obj.text}
-                  imgSrc={obj.imgSrc}
-                  text={obj.text}
-                  index={index}
-                  progress={obj.progress}
-                />
-              ))}
-            </div>
-          </div>
-        </RevealOnScroll> */}
 
         {/* State Management */}
         <RevealOnScroll delay={0.3}>

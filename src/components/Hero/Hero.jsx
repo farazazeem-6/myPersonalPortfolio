@@ -3,10 +3,9 @@ import styles from "../../components/Hero/Hero.module.css";
 import { cn } from "../../lib/utils";
 import { AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import HeroImg from "../../../public/personal.jpeg";
+import HeroImg from "../../../public/IMG_8265.jpg";
 import { motion } from "framer-motion";
 import { TEXTS } from "../../constant/string";
-
 
 function Hero() {
   const navigate = useNavigate();
@@ -34,9 +33,7 @@ function Hero() {
       {/* add the components here... */}
       <div className={`relative z-10 ${styles.heroInnerContainer}`}>
         <div className={styles.heroTextCont}>
-          <h1>
-            M<span className={styles.dot}>.</span> Faraz
-          </h1>
+          <h1>Faraz Azeem</h1>
           <h3>
             I'm
             <AnimatePresence mode="wait">
@@ -55,7 +52,7 @@ function Hero() {
           <p className={styles.roleText}>
             🚀 Front End Developer with{" "}
             <span style={{ fontWeight: 700, marginRight: "5px" }}>
-              1.5 year of learning and 6 month of freelancing
+              9 months of learning and 6 month of working
             </span>
             experience.
           </p>

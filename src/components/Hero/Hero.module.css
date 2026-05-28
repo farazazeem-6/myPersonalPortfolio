@@ -1,6 +1,4 @@
 .heroContainer {
-  /* background-color: var(--dark-color-1); */
-  /* background-color: #111827; */
   background-color: var(--hero-body-color);
   backdrop-filter: blur(100px);
 }
@@ -18,11 +16,10 @@
   color: var(--white-color);
   font-size: 3.8rem;
   font-weight: 800;
-  /* color: #d4d4d4; */
-  /* color: #404040; */
+  line-height: 0.9;
 }
 .motionText {
-  margin-left: 15px;
+  margin-left: 12px;
   font-size: 1.6rem;
   font-weight: 800;
   color: var(--purple-button-color);
