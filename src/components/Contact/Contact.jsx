@@ -27,7 +27,7 @@ function Contact() {
             </div>
           </RevealOnScroll>
         </div>
-        <div className={styles.contactChildContainer} >
+        <div className={styles.contactChildContainer}>
           <ContactSection />
         </div>
         <div>

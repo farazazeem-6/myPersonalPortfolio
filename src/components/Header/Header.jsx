@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import ImageModal from "../ImageModal/ImageModal";
-import HeroImg from "../../../public/personal.jpeg";
+import HeroImg from "../../../public/IMG_8265.jpg";
 
 
 

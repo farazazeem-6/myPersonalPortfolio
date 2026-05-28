@@ -36,21 +36,6 @@
   text-align: center;
   font-weight: 500;
 }
-.skillText::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 4px;
-  background: radial-gradient(
-    circle,
-    var(--gradient-blue) 0%,
-    var(--gradient-pink) 100%
-  );
-  border-radius: 10px;
-  bottom: 10px;
-}
 .boxes {
   display: grid;
   max-width: 1400px;
@@ -76,20 +61,6 @@
   position: relative;
 }
 
-.skillTextLine {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 4px;
-  background: radial-gradient(
-    circle,
-    var(--gradient-blue) 0%,
-    var(--gradient-pink) 100%
-  );
-  border-radius: 10px;
-  bottom: 10px;
-}
 
 .frontEndLine {
   position: absolute;
