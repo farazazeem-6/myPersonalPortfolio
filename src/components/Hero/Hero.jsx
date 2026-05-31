@@ -78,33 +78,6 @@ function Hero() {
         </div>
         <div className={styles.heroImgCont}>
           <img src={HeroImg} alt="" />
-          <div className={`${styles.label} ${styles.label1}`}>
-            <div className={`${styles.labelIcon} ${styles.iconPurple}`}>
-              <i className="fa-solid fa-computer"></i>
-            </div>
-            <span>React JS</span>
-          </div>
-
-          <div className={`${styles.label} ${styles.label2}`}>
-            <div className={`${styles.labelIcon} ${styles.iconGreen}`}>
-              <i className="ri-server-line"></i>
-            </div>
-            <span>Next JS</span>
-          </div>
-
-          <div className={`${styles.label} ${styles.label3}`}>
-            <div className={`${styles.labelIcon} ${styles.iconCyan}`}>
-              <i className="ri-smartphone-line"></i>
-            </div>
-            <span>TypeScript</span>
-          </div>
-
-          <div className={`${styles.label} ${styles.label4}`}>
-            <div className={`${styles.labelIcon} ${styles.iconRed}`}>
-              <i className="ri-apple-line"></i>
-            </div>
-            <span>Tailwind</span>
-          </div>
         </div>
       </div>
     </div>

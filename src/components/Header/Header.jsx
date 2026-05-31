@@ -130,7 +130,10 @@ function Header() {
             <ul>
               <NavLink
                 to={"/"}
-                onClick={handleHomeClick}
+                onClick={(e) => {
+                  handleHomeClick(e);
+                  toggleMenu();
+                }}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -139,6 +142,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/skills"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -147,6 +151,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/projects"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -155,6 +160,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/testimonials"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -163,6 +169,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/contact"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -175,7 +182,10 @@ function Header() {
 
         <div className={styles.sideBarFooter}>
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => {
+              navigate("/contact");
+              toggleMenu();
+            }}
             className={styles.getInTouchBtn}
           >
             Get in touch
