@@ -7,8 +7,6 @@ import ReactImg from "../../utils/images/react.png";
 import typeScriptImg from "../../utils/images/typescript.png";
 import tailwindImg from "../../utils/images/tailwindcss.png";
 import shadcnImg from "../../utils/images/shadcn.png";
-// import nodeImg from "../../utils/images/nodejs.png";
-// import expressImg from "../../utils/images/circled.png";
 import figmaImg from "../../utils/images/figma.png";
 import framerImg from "../../utils/images/framer.png";
 import sassImg from "../../utils/images/sass.png";
@@ -16,12 +14,14 @@ import hookFormImg from "../../utils/images/form.png";
 import reduxImg from "../../utils/images/redux.png";
 // import databaseImg from "../../utils/images/database.png";
 import boxesImg from "../../utils/images/boxes.png";
+import nextJsImg from "../../utils/images/nextdotjs.svg";
 import postamnImg from "../../utils/images/postman-.png";
 import contextApiImg from "../../utils/images/modelcontext.png";
 import About from "../About/About";
 
 const frontEndSkills = [
   { imgSrc: ReactImg, text: "React JS", progress: 70 },
+  { imgSrc: nextJsImg, text: "Next JS", progress: 65 },
   { imgSrc: typeScriptImg, text: "TypeScript", progress: 40 },
   { imgSrc: tailwindImg, text: "Tailwind Css", progress: 80 },
   { imgSrc: framerImg, text: "Framer", progress: 60 },
@@ -29,11 +29,6 @@ const frontEndSkills = [
   { imgSrc: hookFormImg, text: "React Hook Form", progress: 90 },
   { imgSrc: boxesImg, text: "React Router DOM", progress: 80 },
 ];
-// const backEndSkills = [
-//   { imgSrc: nodeImg, text: "Node JS", progress: 30 },
-//   { imgSrc: expressImg, text: "Express JS", progress: 40 },
-//   { imgSrc: databaseImg, text: "Mongo DB", progress: 50 },
-// ];
 const statekills = [
   { imgSrc: reduxImg, text: "RTK", progress: 75 },
   { imgSrc: contextApiImg, text: "Context API", progress: 90 },
@@ -48,14 +43,14 @@ const tools = [
 // Reusable Animation Wrapper
 export const RevealOnScroll = ({ children, delay = 0 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.3 });
+  const isInView = useInView(ref, { once: false, amount: 0.1 });
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-      transition={{ duration: 0.8, delay: delay, ease: "easeOut" }}
+      initial={{ opacity: 0.7, y: 10 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0.7, y: 10 }}
+      transition={{ duration: 0.4, delay: delay, ease: "easeOut" }}
     >
       {children}
     </motion.div>
@@ -65,7 +60,7 @@ export const RevealOnScroll = ({ children, delay = 0 }) => {
 // Animated Line Component (for ::after effect)
 export const AnimatedLine = ({ className }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.5 });
+  const isInView = useInView(ref, { once: false, amount: 0.1 });
 
   return (
     <motion.div
@@ -120,7 +115,6 @@ function Skill() {
             </div>
           </div>
         </RevealOnScroll>
-
 
         {/* State Management */}
         <RevealOnScroll delay={0.3}>

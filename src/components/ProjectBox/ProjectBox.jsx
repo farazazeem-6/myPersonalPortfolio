@@ -46,9 +46,9 @@ function ProjectBox({ data }) {
         <h4>TECH STACK</h4>
         <div className={styles.techBox}>
           <p>JS</p>
-          <p>BOOTSTRAP</p>
-          <p>HTML</p>
-          <p>CSS</p>
+          <p>Next JS</p>
+          <p>TypeScript</p>
+          <p>Firebase</p>
         </div>
         <a target="_blank" href={link}>
           <button className={styles.demoBtn}>Live Demo</button>
