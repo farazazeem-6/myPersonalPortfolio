@@ -387,3 +387,47 @@ export const PhoneIcon = () => (
       d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
   </svg>
 ); 
+
+export const SunIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+);
+
+export const MoonIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+);
+
+export const InstagramIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 7a4 4 0 100 8 4 4 0 000-8zm5-3a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
+);
+
+export const WhatsappIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.91 11.91 0 0012 0C5.373 0 0 5.373 0 12c0 2.117.553 4.106 1.603 5.86L0 24l6.369-1.657A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12 0-1.99-.47-3.864-1.48-5.52zM12.02 20.2c-1.64 0-3.25-.44-4.63-1.26l-.33-.2-3.78.98.99-3.69-.21-.38A8.01 8.01 0 014 12.02c0-4.42 3.6-8.02 8.02-8.02 2.14 0 4.15.83 5.66 2.34a7.99 7.99 0 012.36 5.68c0 4.42-3.6 8.02-8.02 8.02z"/><path d="M17.59 14.37c-.3-.15-1.77-.87-2.05-.97-.28-.11-.48-.15-.69.15-.21.3-.81.97-.99 1.17-.18.2-.36.22-.66.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.51-1.79-1.69-2.09-.18-.3-.02-.46.13-.61.13-.13.3-.33.45-.5.15-.17.2-.28.3-.47.1-.18.05-.35-.02-.5-.07-.15-.69-1.66-.95-2.28-.25-.6-.51-.52-.69-.53-.18-.01-.39-.01-.6-.01s-.5.07-.76.36c-.26.29-1 1-1 2.44s1.03 2.83 1.18 3.03c.15.2 2.05 3.12 4.98 4.37 1.09.47 1.94.75 2.61.96.87.27 1.66.23 2.29.14.7-.11 1.77-.72 2.02-1.41.25-.69.25-1.28.18-1.41-.07-.12-.28-.19-.58-.34z"/></svg>
+);
+
+export const TikTokIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 2c-.2 1.1-.8 2-1.7 2.7-.9.7-2 1-3.1 1v4.1c0 2.6 1.8 5 4.3 5.6-.4.6-.9 1.1-1.6 1.4-1.5.6-3.2.3-4.4-.8-1.3-1.2-1.8-3-1.4-4.7.4-1.8 1.9-3.3 3.7-3.6V2h3.2z"/></svg>
+);
+
+export const GraduationCapIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/><path d="M11 12.5v7.5h2v-7.5l-1 .45-1-.45z"/></svg>
+);
+
+export const BookOpenIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 7a2 2 0 012-2h14a2 2 0 012 2v12a1 1 0 01-1.45.89L12 17l-7.55 2.89A1 1 0 013 19V7z"/></svg>
+);
+
+export const AwardIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l2.09 4.26L19 7.27l-3 2.9.71 4.14L12 13.77 7.29 14.4 8 10.26 5 7.36l4.91-.99L12 2z"/></svg>
+);
+
+export const UserIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
+);
+
+export const MessageIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+);
+
+export const MapPinIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+);

@@ -19,11 +19,13 @@ function ProjectBox({ data }) {
     }));
   };
 
-  const { image, title, link, text, id } = data;
+  const { image, title, link, text, id, techStack } = data;
 
   return (
     <div className={styles.projectBox}>
-      <img src={image} alt="" />
+      <div className={styles.imageWrap}>
+        <img src={image} alt={title} />
+      </div>
       <div className={styles.projectData}>
         <h1>{title}</h1>
         <div className={styles.carouselDiv}>
@@ -45,10 +47,10 @@ function ProjectBox({ data }) {
         </p>
         <h4>TECH STACK</h4>
         <div className={styles.techBox}>
-          <p>JS</p>
-          <p>Next JS</p>
-          <p>TypeScript</p>
-          <p>Firebase</p>
+          {techStack &&
+            techStack.map((tech, idx) => (
+              <p key={idx}>{tech}</p>
+            ))}
         </div>
         <a target="_blank" href={link}>
           <button className={styles.demoBtn}>Live Demo</button>

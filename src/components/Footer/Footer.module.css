@@ -276,10 +276,17 @@
 }
 .right {
   display: flex;
-  gap: 5px;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .right i {
   color: var(--purple-button-color);
+}
+
+.footerBottom p {
+  margin: 0;
+  white-space: nowrap;
 }
 
 /* Responsive Design */
