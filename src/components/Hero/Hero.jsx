@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import styles from "../../components/Hero/Hero.module.css";
 import { cn } from "../../lib/utils";
 import { AnimatePresence } from "framer-motion";
@@ -10,12 +10,20 @@ import { TEXTS } from "../../constant/string";
 function Hero() {
   const navigate = useNavigate();
   const [index, setIndex] = useState(0);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const imgRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % TEXTS.length);
     }, 2000);
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (imgRef.current?.complete) {
+      setImageLoaded(true);
+    }
   }, []);
 
   return (
@@ -77,7 +85,13 @@ function Hero() {
           </button>
         </div>
         <div className={styles.heroImgCont}>
-          <img src={HeroImg} alt="" />
+          <img
+            ref={imgRef}
+            src={HeroImg}
+            alt=""
+            onLoad={() => setImageLoaded(true)}
+            className={cn(imageLoaded && styles.loaded)}
+          />
         </div>
       </div>
     </div>

@@ -109,10 +109,15 @@
   width: 500px;
   border-radius: 15px;
   border: 10px solid var(--purple-button-color);
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out, filter 0.3s ease-in-out, transform 0.3s ease-in-out;
   animation: float 3s ease-in-out infinite;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   filter: grayscale(100%);
+  opacity: 0;
+}
+
+.heroImgCont img.loaded {
+  opacity: 1;
 }
 
 .heroImgCont img:hover {
