@@ -1,6 +1,12 @@
 import { Marquee } from "../../components/ui/marquee";
 import styles from "../ReviewCard/ReviewCard.module.css";
 import starImg from "../../../public/star.png";
+import t1 from "../../../public/testimonial-1.avif";
+import t2 from "../../../public/testimonial-2.avif";
+import t3 from "../../../public/testimonial-3.avif";
+import t4 from "../../../public/testimonial-4.jpeg";
+import t5 from "../../../public/testimonial-5.jpeg";
+import t6 from "../../../public/testimonial-6.jpg";
 import { useSelector } from "react-redux";
 
 const reviews = [
@@ -8,37 +14,37 @@ const reviews = [
     name: "Usman Abbas",
     username: "@usmanabbas",
     body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://images.unsplash.com/photo-1644383431542-19f678c3e207?q=80&w=971&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: t1,
   },
   {
     name: "Bilal Khawaja",
     username: "@nothing.",
     body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://images.unsplash.com/photo-1722354980566-ec247cb4f1a8?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: t2,
   },
   {
     name: "Ali Akbar",
     username: "@aliM",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://images.unsplash.com/photo-1711045290148-9dc18f7776fb?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: t3,
   },
   {
     name: "Fatima",
     username: "@fatima",
     body: "Fast and responsive UI.Love your work.Thanks.",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPmPPoHhb5Hl45zqf2PhZ-GCHRU-fllf-2gkPeLoAan4x85YbsrmXaztU&s",
+    img: t4,
   },
   {
     name: "Saira",
     username: "@sarii",
     body: "I am happy to work with you Faraz. This is amazing. I love it.",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPGJtvcEk4Lm5Y52Jk2LG2nRnFQoQjfTDcuL5OeBSsYFXCtoTymuWYc3E&s",
+    img: t5,
   },
   {
     name: "Jammy",
     username: "@james",
     body: "Very fast and beautiful UI design.Amazing work!",
-    img: "https://avatar.vercel.sh/james",
+    img: t6,
   },
 ];
 

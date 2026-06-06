@@ -40,7 +40,7 @@ function About() {
         <div className={styles.aboutText}>
           <div>
             <TextRevealScroll
-              text="My Next Mission is to learn WEB 3.0 as I already know much about cryptocurrency and learning SolidityJS"
+              text="My Next Mission is to learn WEB 3.0 and React Native for building mobile apps."
               className="w-full"
             />
           </div>

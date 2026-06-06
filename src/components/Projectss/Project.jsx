@@ -4,6 +4,8 @@ import project1 from "../../../public/project119.png";
 import project2 from "../../../public/project124.png";
 import project3 from "../../../public/petConnect.png";
 import ProjectBox from "../ProjectBox/ProjectBox";
+import { ArrowRightIcon } from "../ui/icons";
+import { TECH_STACKS } from "../../constant";
 
 const text1 =
   "A full-stack application for pet rescues. Includes user listings for animal donations, a searchable adoption database, and a real-time lost-and-found reporting system and AI ChatBot Module.";
@@ -13,17 +15,19 @@ const text2 =
 const projects = [
   {
     id: 1,
-    title: "Pet Connect",
+    title: "Pet Connect ( A Full Stack Web Application)",
     text: text1,
     image: project3,
     link: "https://pet-connect-fyp.vercel.app/",
+    techStack: TECH_STACKS.petConnect,
   },
   {
     id: 2,
-    title: "Baloach Travels",
+    title: "Baloach Travels (PWA)",
     text: text2,
     image: project2,
     link: "https://test-website-deployment.vercel.app/",
+    techStack: TECH_STACKS.baloachTravels,
   },
 ];
 
@@ -53,7 +57,7 @@ function Project() {
         <a target="_blank" href="https://github.com/farazazeem-6">
           <p>
             View More Projects on GitHub
-            <i className="ri-arrow-right-up-line"></i>
+            <ArrowRightIcon />
           </p>
         </a>
       </div>

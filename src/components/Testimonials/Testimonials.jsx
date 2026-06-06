@@ -7,37 +7,37 @@ const reviews = [
     name: "Usman Abbas",
     username: "@usmanabbas",
     body: "Working with Faraz has been an exceptional experience. His attention to detail in UI design and ability to transform complex requirements into clean, intuitive interfaces is remarkable. He consistently delivers high-quality code that's not only functional but also maintainable. Highly recommended for any frontend development project.",
-    img: "https://images.unsplash.com/photo-1644383431542-19f678c3e207?q=80&w=971&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "./testimonial-1.avif",
   },
   {
     name: "Bilal Khawaja",
     username: "@nothing.",
     body: "Faraz is an incredibly talented developer with a strong grasp of modern frontend technologies. His work on React and Next.js projects has been outstanding, and his problem-solving skills are exceptional. He's proactive, communicative, and always willing to go the extra mile to ensure project success. A true professional.",
-    img: "https://images.unsplash.com/photo-1722354980566-ec247cb4f1a8?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "./testimonial-2.avif",
   },
   {
     name: "Ali Akbar",
     username: "@aliM",
     body: "I've collaborated with Faraz on several projects, and his performance has consistently exceeded expectations. He has excellent command over TypeScript, state management, and CSS frameworks. What impressed me most is his ability to learn quickly and adapt to new technologies. His code is clean, well-documented, and follows best practices.",
-    img: "https://images.unsplash.com/photo-1711045290148-9dc18f7776fb?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "./testimonial-3.avif",
   },
   {
     name: "Fatima",
     username: "@fatima",
     body: "Faraz's UI/UX implementation is phenomenal. He creates interfaces that are not just visually stunning but also incredibly responsive and performant. His expertise in Tailwind CSS and animation libraries like Framer Motion brings designs to life beautifully. Working on projects with him has been smooth and productive.",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPmPPoHhb5Hl45zqf2PhZ-GCHRU-fllf-2gkPeLoAan4x85YbsrmXaztU&s",
+    img: "./testimonial-4.jpeg",
   },
   {
     name: "Saira",
     username: "@sarii",
     body: "It's been a pleasure collaborating with Faraz on multiple frontend projects. His dedication to delivering pixel-perfect designs and his meticulous approach to testing ensure that every feature works flawlessly. He's not just a developer but a creative problem-solver who brings fresh ideas to the table. Truly exceptional work ethic.",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPGJtvcEk4Lm5Y52Jk2LG2nRnFQoQjfTDcuL5OeBSsYFXCtoTymuWYc3E&s",
+    img: "./testimonial-5.jpeg",
   },
   {
     name: "Jammy",
     username: "@james",
     body: "Faraz is a standout developer with impressive skills in modern web development. His performance optimization techniques and understanding of component architecture are outstanding. He delivers projects on time with clean code and comprehensive documentation. His enthusiasm and professional approach make him a valuable addition to any team.",
-    img: "https://avatar.vercel.sh/james",
+    img: "./testimonial-6.jpg",
   },
 ];
 

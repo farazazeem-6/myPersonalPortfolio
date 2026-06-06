@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import ImageModal from "../ImageModal/ImageModal";
+import { GitHubIcon, LinkedInIcon, InstagramIcon, WhatsappIcon, ArrowRightIcon } from "../ui/icons";
 import HeroImg from "../../../public/IMG_8265.jpg";
 
 
@@ -180,7 +181,7 @@ function Header() {
           </div>
         </div>
 
-        <div className={styles.sideBarFooter}>
+          <div className={styles.sideBarFooter}>
           <button
             onClick={() => {
               navigate("/contact");
@@ -189,23 +190,20 @@ function Header() {
             className={styles.getInTouchBtn}
           >
             Get in touch
-            <i className="ri-external-link-line"></i>
+            <ArrowRightIcon />
           </button>
           <div className={styles.socialIcon}>
-            <a target="_blank" href="https://github.com/farazazeem-6">
-              <i className="ri-github-line"></i>
+            <a target="_blank" href="https://github.com/farazazeem-6" aria-label="GitHub">
+              <GitHubIcon />
             </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/faraz-azeem-45207727b/"
-            >
-              <i className="ri-linkedin-line"></i>
+            <a target="_blank" href="https://www.linkedin.com/in/faraz-azeem-45207727b/" aria-label="LinkedIn">
+              <LinkedInIcon />
             </a>
-            <a target="_blank" href="https://www.instagram.com/faraz_dhillon6/">
-              <i className="ri-instagram-line"></i>
+            <a target="_blank" href="https://www.instagram.com/faraz_dhillon6/" aria-label="Instagram">
+              <InstagramIcon />
             </a>
-            <a target="_blank" href="https://wa.me/923098495478">
-              <i className="ri-tiktok-fill"></i>
+            <a target="_blank" href="https://wa.me/923098495478" aria-label="WhatsApp">
+              <WhatsappIcon />
             </a>
           </div>
         </div>
