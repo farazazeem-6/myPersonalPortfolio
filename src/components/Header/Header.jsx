@@ -6,7 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import ImageModal from "../ImageModal/ImageModal";
-import { GitHubIcon, LinkedInIcon, InstagramIcon, WhatsappIcon, ArrowRightIcon } from "../ui/icons";
+import { GitHubIcon, LinkedInIcon, TikTokIcon, FacebookIcon, WhatsappIcon, ArrowRightIcon } from "../ui/icons";
 import HeroImg from "../../../public/IMG_8265.jpg";
 
 
@@ -199,8 +199,11 @@ function Header() {
             <a target="_blank" href="https://www.linkedin.com/in/faraz-azeem-45207727b/" aria-label="LinkedIn">
               <LinkedInIcon />
             </a>
-            <a target="_blank" href="https://www.instagram.com/faraz_dhillon6/" aria-label="Instagram">
-              <InstagramIcon />
+            <a target="_blank" href="https://www.tiktok.com/@farazdhillon06" aria-label="TikTok">
+              <TikTokIcon />
+            </a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100059462846704" aria-label="Facebook">
+              <FacebookIcon />
             </a>
             <a target="_blank" href="https://wa.me/923098495478" aria-label="WhatsApp">
               <WhatsappIcon />

@@ -1,50 +1,44 @@
 import { Marquee } from "../../components/ui/marquee";
 import styles from "../ReviewCard/ReviewCard.module.css";
 import starImg from "../../../public/star.png";
-import t1 from "../../../public/testimonial-1.avif";
-import t2 from "../../../public/testimonial-2.avif";
-import t3 from "../../../public/testimonial-3.avif";
-import t4 from "../../../public/testimonial-4.jpeg";
-import t5 from "../../../public/testimonial-5.jpeg";
-import t6 from "../../../public/testimonial-6.jpg";
 import { useSelector } from "react-redux";
 
 const reviews = [
   {
     name: "Usman Abbas",
     username: "@usmanabbas",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: t1,
+    body: "Working with Faraz has been an exceptional experience.",
+    img: "./testimonial-1.avif",
   },
   {
     name: "Bilal Khawaja",
     username: "@nothing.",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: t2,
+    body: "Faraz is an incredibly talented developer with a strong grasp of modern frontend technologies. His work on React and Next.js projects has been outstanding, and his problem-solving skills are exceptional.",
+    img: "./testimonial-2.avif",
   },
   {
     name: "Ali Akbar",
     username: "@aliM",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: t3,
+    body: "I've collaborated with Faraz on several projects, and his performance has consistently exceeded expectations. He has excellent command over TypeScript, state management, and CSS frameworks.",
+    img: "./testimonial-3.avif",
   },
   {
     name: "Fatima",
     username: "@fatima",
-    body: "Fast and responsive UI.Love your work.Thanks.",
-    img: t4,
+    body: "Faraz's UI/UX implementation is phenomenal. He creates interfaces that are not just visually stunning but also incredibly responsive and performant.",
+    img: "./testimonial-4.jpeg",
   },
   {
     name: "Saira",
     username: "@sarii",
-    body: "I am happy to work with you Faraz. This is amazing. I love it.",
-    img: t5,
+    body: "It's been a pleasure collaborating with Faraz on multiple frontend projects. His dedication to delivering pixel-perfect designs and his meticulous approach to testing ensure that every feature works flawlessly.",
+    img: "./testimonial-5.jpeg",
   },
   {
     name: "Jammy",
     username: "@james",
-    body: "Very fast and beautiful UI design.Amazing work!",
-    img: t6,
+    body: "Faraz is a standout developer with impressive skills in modern web development. His performance optimization techniques and understanding of component architecture are outstanding.",
+    img: "./testimonial-6.jpg",
   },
 ];
 

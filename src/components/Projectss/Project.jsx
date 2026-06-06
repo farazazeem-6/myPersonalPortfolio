@@ -1,8 +1,5 @@
 import styles from "../../components/Projectss/Project.module.css";
 import { AnimatedLine, RevealOnScroll } from "../Skills/Skill";
-import project1 from "../../../public/project119.png";
-import project2 from "../../../public/project124.png";
-import project3 from "../../../public/petConnect.png";
 import ProjectBox from "../ProjectBox/ProjectBox";
 import { ArrowRightIcon } from "../ui/icons";
 import { TECH_STACKS } from "../../constant";
@@ -17,7 +14,7 @@ const projects = [
     id: 1,
     title: "Pet Connect ( A Full Stack Web Application)",
     text: text1,
-    image: project3,
+    image: "./petConnect.png",
     link: "https://pet-connect-fyp.vercel.app/",
     techStack: TECH_STACKS.petConnect,
   },
@@ -25,7 +22,7 @@ const projects = [
     id: 2,
     title: "Baloach Travels (PWA)",
     text: text2,
-    image: project2,
+    image: "./project124.png",
     link: "https://test-website-deployment.vercel.app/",
     techStack: TECH_STACKS.baloachTravels,
   },
