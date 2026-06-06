@@ -134,12 +134,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  background: linear-gradient(
-    90deg,
-    hsla(286, 48%, 91%, 1) 0%,
-    hsla(340, 65%, 49%, 1) 0%,
-    hsla(263, 58%, 45%, 1) 100%
-  );
+  background-color: var(--purple-button-color);
 }
 .testimonialbtn:hover {
   transform: translateY(-5px);

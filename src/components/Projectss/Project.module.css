@@ -55,6 +55,9 @@
 }
 .gitrepo p {
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .gitrepo p:hover {
   color: #b97ef3;
