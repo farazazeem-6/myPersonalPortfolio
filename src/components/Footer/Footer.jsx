@@ -14,7 +14,6 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* Profile Section */}
         <div className={styles.profileSection}>
           <div className={styles.profileHeader}>
             <div className={styles.profileImage}>
