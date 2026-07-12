@@ -9,17 +9,19 @@
 @media (max-width: 770px) {
   .marqueeWrapper {
     font-size: 3rem;
+    padding: 0px 20px 50px;
   }
 }
 @media (max-width: 500px) {
   .marqueeWrapper {
     font-size: 2rem;
+    padding: 0px 15px 25px;
   }
 }
 @media (max-width: 400px) {
   .marqueeWrapper {
     font-size: 1.5rem;
     letter-spacing: 10px;
-    padding: 10px 10px 50px;
+    padding: 0px 10px 15px;
   }
 }

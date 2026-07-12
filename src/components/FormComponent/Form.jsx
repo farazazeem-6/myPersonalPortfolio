@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "../FormComponent/Form.module.css";
+import { UserIcon, MailIcon, MessageIcon, MapPinIcon, PhoneIcon, LinkedInIcon } from "../ui/icons";
 
 const ContactSection = () => {
   const form = useRef();
@@ -57,7 +58,7 @@ const ContactSection = () => {
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
           <div className={styles.inputGroup}>
             <div className={styles.iconPlaceholder}>
-              <i className="ri-user-3-line"></i>
+              <UserIcon />
             </div>
             <input
               type="text"
@@ -70,7 +71,7 @@ const ContactSection = () => {
 
           <div className={styles.inputGroup}>
             <div className={styles.iconPlaceholder}>
-              <i className="ri-mail-line"></i>
+              <MailIcon />
             </div>
             <input
               type="email"
@@ -83,7 +84,7 @@ const ContactSection = () => {
 
           <div className={styles.inputGroup}>
             <div className={styles.iconPlaceholder}>
-              <i className="ri-chat-4-line"></i>
+              <MessageIcon />
             </div>
             <textarea
               name="message"
@@ -127,7 +128,7 @@ const ContactSection = () => {
         <div className={styles.contactCards}>
           <div className={styles.contactCard}>
             <div className={styles.contactIcon}>
-              <i className="ri-map-pin-2-line"></i>
+              <MapPinIcon />
             </div>
             <div className={styles.contactInfo}>
               <div className={styles.contactLabel}>Location</div>
@@ -137,7 +138,7 @@ const ContactSection = () => {
 
           <div className={styles.contactCard}>
             <div className={styles.contactIcon}>
-              <i className="ri-phone-line"></i>
+              <PhoneIcon />
             </div>
             <div className={styles.contactInfo}>
               <div className={styles.contactLabel}>Phone</div>
@@ -147,7 +148,7 @@ const ContactSection = () => {
 
           <div className={styles.contactCard}>
             <div className={styles.contactIcon}>
-              <i className="ri-mail-line"></i>
+              <MailIcon />
             </div>
             <div className={styles.contactInfo}>
               <div className={styles.contactLabel}>Email</div>
@@ -157,7 +158,7 @@ const ContactSection = () => {
 
           <div className={styles.contactCard}>
             <div className={styles.contactIcon}>
-              <i className="ri-linkedin-fill"></i>
+              <LinkedInIcon />
             </div>
             <a
               target="_blank"

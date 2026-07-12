@@ -1,6 +1,7 @@
 import styles from "../Resume/Resume.module.css";
 import { RevealOnScroll } from "../Skills/Skill";
 import ResumeImg from "../../../public/Faraz_Azeem_Resume.pdf";
+import { DownloadIcon, ShareIcon, GraduationCapIcon, BookOpenIcon, AwardIcon } from "../ui/icons";
 
 const handleEmailClick = () => {
   window.location.href = "mailto:farazazeem66@gmail.com";
@@ -27,12 +28,12 @@ function Resume() {
           <div className={styles.resumeBtns}>
             <a href={ResumeImg} download={ResumeImg}>
               <button className={`${styles.resumeBtn} ${styles.downloadBtn}`}>
-                <i class="ri-download-2-line"></i>Download Resume
+                <DownloadIcon /> Download Resume
               </button>
             </a>
             <a href={ResumeImg} target="_blank">
               <button className={`${styles.resumeBtn} ${styles.newTabBtn}`}>
-                <i class="ri-share-box-line"></i>Open in New Tab
+                <ShareIcon /> Open in New Tab
               </button>
             </a>
           </div>
@@ -55,17 +56,17 @@ function Resume() {
         <RevealOnScroll>
           <div className={styles.boxes}>
             <div className={styles.box}>
-              <i class="ri-graduation-cap-line"></i>
+              <GraduationCapIcon />
               <p>Degree</p>
               <p>Bachelor's in Computer Science</p>
             </div>
             <div className={styles.box}>
-              <i class="ri-book-open-line"></i>
+              <BookOpenIcon />
               <p>University</p>
               <p>GCUF</p>
             </div>
             <div className={styles.box}>
-              <i class="ri-award-line"></i>
+              <AwardIcon />
               <p>Year</p>
               <p>2022-2026</p>
             </div>
@@ -75,11 +76,11 @@ function Resume() {
           <div className={styles.connectBox}>
             <div className={styles.connectBoxdata}>
               <p>Interested in working together?</p>
-              <button
+                <button
                 onClick={handleEmailClick}
                 className={`${styles.resumeBtn} ${styles.connectBtn}`}
               >
-                Lets's Connect <i class="ri-share-box-line"></i>
+                Lets's Connect <ShareIcon />
               </button>
             </div>
           </div>

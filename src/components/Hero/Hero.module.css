@@ -103,80 +103,25 @@
   margin-top: 5px;
   font-weight: 800;
 }
-.heroImgCont img:hover {
-  border-color: var(--purple-button-color);
-}
+
 .heroImgCont img {
   /* width: 100%; */
   width: 500px;
-  border-radius: 50%;
+  border-radius: 15px;
   border: 10px solid var(--purple-button-color);
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out, filter 0.3s ease-in-out, transform 0.3s ease-in-out;
   animation: float 3s ease-in-out infinite;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  filter: grayscale(100%);
+  opacity: 0;
 }
 
-/* floating label css  */
-
-.label {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 10px 30px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  font-weight: 600;
-  color: #333;
-  animation: float 3s ease-in-out infinite;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease;
-  font-size: 14px;
-  border: 1px solid #fff;
+.heroImgCont img.loaded {
+  opacity: 1;
 }
 
-.label:hover {
-  transform: scale(1.05) !important;
-}
-
-/* Icon positioned at top-left corner of label */
-.labelIcon {
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 16px;
-  border: 3px solid #fff;
-  z-index: 10;
-}
-
-/* Individual label positions and animations */
-.label1 {
-  top: 12%;
-  right: -1%;
-  animation-delay: 1s;
-}
-
-.label2 {
-  top: 25%;
-  left: -10%;
-  animation-delay: 0.5s;
-}
-
-.label3 {
-  bottom: 35%;
-  right: -10%;
-  animation-delay: 2s;
-}
-
-.label4 {
-  bottom: 20%;
-  left: -2%;
-  animation-delay: 1.5s;
+.heroImgCont img:hover {
+  filter: grayscale(0%);
 }
 
 @keyframes float {
@@ -189,25 +134,9 @@
   }
 }
 
-/* Icon colors - for your reference */
-.iconPurple {
-  background: #1b247e;
-}
-
-.iconGreen {
-  background: #9c27b0;
-}
-
-.iconCyan {
-  background: #2fc5dc;
-}
-
-.iconRed {
-  background: #c62a2a;
-}
 @media (max-width: 1200px) {
   .heroInnerContainer {
-    padding: 11rem 5%;
+    padding: 8rem 5%;
   }
 }
 
@@ -217,11 +146,14 @@
   }
   .heroInnerContainer {
     justify-content: center;
-    padding: 8rem 5%;
+    padding: 6rem 5%;
     align-items: center;
   }
 }
 @media (max-width: 500px) {
+  .heroInnerContainer {
+    padding: 5rem 5%;
+  }
   .heroTextCont h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -247,6 +179,9 @@
 }
 
 @media (max-width: 400px) {
+  .heroInnerContainer {
+    padding: 6rem 5% 40px;
+  }
   .heroTextCont h1 {
     font-size: 2.6rem;
   }

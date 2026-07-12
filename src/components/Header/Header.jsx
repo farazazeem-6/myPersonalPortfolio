@@ -6,6 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import ImageModal from "../ImageModal/ImageModal";
+import { GitHubIcon, LinkedInIcon, TikTokIcon, FacebookIcon, WhatsappIcon, ArrowRightIcon } from "../ui/icons";
 import HeroImg from "../../../public/IMG_8265.jpg";
 
 
@@ -130,7 +131,10 @@ function Header() {
             <ul>
               <NavLink
                 to={"/"}
-                onClick={handleHomeClick}
+                onClick={(e) => {
+                  handleHomeClick(e);
+                  toggleMenu();
+                }}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -139,6 +143,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/skills"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -147,6 +152,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/projects"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -155,6 +161,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/testimonials"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -163,6 +170,7 @@ function Header() {
               </NavLink>
               <NavLink
                 to={"/contact"}
+                onClick={toggleMenu}
                 className={({ isActive }) =>
                   isActive ? styles.activeLink : ""
                 }
@@ -173,29 +181,32 @@ function Header() {
           </div>
         </div>
 
-        <div className={styles.sideBarFooter}>
+          <div className={styles.sideBarFooter}>
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => {
+              navigate("/contact");
+              toggleMenu();
+            }}
             className={styles.getInTouchBtn}
           >
             Get in touch
-            <i className="ri-external-link-line"></i>
+            <ArrowRightIcon />
           </button>
           <div className={styles.socialIcon}>
-            <a target="_blank" href="https://github.com/farazazeem-6">
-              <i className="ri-github-line"></i>
+            <a target="_blank" href="https://github.com/farazazeem-6" aria-label="GitHub">
+              <GitHubIcon />
             </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/faraz-azeem-45207727b/"
-            >
-              <i className="ri-linkedin-line"></i>
+            <a target="_blank" href="https://www.linkedin.com/in/faraz-azeem-45207727b/" aria-label="LinkedIn">
+              <LinkedInIcon />
             </a>
-            <a target="_blank" href="https://www.instagram.com/faraz_dhillon6/">
-              <i className="ri-instagram-line"></i>
+            <a target="_blank" href="https://www.tiktok.com/@farazdhillon06" aria-label="TikTok">
+              <TikTokIcon />
             </a>
-            <a target="_blank" href="https://wa.me/923098495478">
-              <i className="ri-tiktok-fill"></i>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100059462846704" aria-label="Facebook">
+              <FacebookIcon />
+            </a>
+            <a target="_blank" href="https://wa.me/923098495478" aria-label="WhatsApp">
+              <WhatsappIcon />
             </a>
           </div>
         </div>
