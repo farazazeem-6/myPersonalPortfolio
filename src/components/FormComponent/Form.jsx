@@ -24,7 +24,7 @@ const ContactSection = () => {
         (result) => {
           console.log(result.text);
           form.current.reset();
-          setResult("✅ Message sent successfully!");
+          setResult("Message sent successfully!");
           setIsSending(false);
           setShowToast(true);
 
@@ -35,7 +35,7 @@ const ContactSection = () => {
         },
         (error) => {
           console.log(error.text);
-          setResult("❌ Failed to send message, please try again.");
+          setResult("Failed to send message, please try again.");
           setIsSending(false);
           setShowToast(true);
 
