@@ -60,7 +60,7 @@ function Hero() {
           <p className={styles.roleText}>
             🚀 Front End Developer with{" "}
             <span style={{ fontWeight: 700, marginRight: "5px" }}>
-              9 months of learning and 6 month of working
+              6 months of learning and 1+ year of working
             </span>
             experience.
           </p>

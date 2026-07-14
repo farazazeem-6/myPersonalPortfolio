@@ -1,7 +1,13 @@
 import styles from "../Resume/Resume.module.css";
 import { RevealOnScroll } from "../Skills/Skill";
-import ResumeImg from "../../../public/Faraz_Azeem_Resume.pdf";
-import { DownloadIcon, ShareIcon, GraduationCapIcon, BookOpenIcon, AwardIcon } from "../ui/icons";
+import ResumeImg from "../../../public/Faraz_Resume.pdf";
+import {
+  DownloadIcon,
+  ShareIcon,
+  GraduationCapIcon,
+  BookOpenIcon,
+  AwardIcon,
+} from "../ui/icons";
 
 const handleEmailClick = () => {
   window.location.href = "mailto:farazazeem66@gmail.com";
@@ -76,7 +82,7 @@ function Resume() {
           <div className={styles.connectBox}>
             <div className={styles.connectBoxdata}>
               <p>Interested in working together?</p>
-                <button
+              <button
                 onClick={handleEmailClick}
                 className={`${styles.resumeBtn} ${styles.connectBtn}`}
               >
