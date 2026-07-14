@@ -58,6 +58,9 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .resumeBtn:hover {
   transform: translateY(-10px);
@@ -108,6 +111,11 @@
 .resumedown {
   display: flex;
   flex-direction: column;
+}
+.flexContaier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .connectBox {
   display: flex;
