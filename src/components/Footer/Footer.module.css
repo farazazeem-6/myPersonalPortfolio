@@ -4,11 +4,12 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1.2fr;
-  gap: 60px;
+  grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
+  justify-content: space-between;
+  gap: 40px;
   padding: 20px 8% 20px;
   border-bottom: 1px solid rgba(138, 138, 138, 0.1);
 }
@@ -260,6 +261,8 @@
   font-size: 16px;
 }
 .footerBottom {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 10px 8% 5px;
   display: flex;
   align-items: center;

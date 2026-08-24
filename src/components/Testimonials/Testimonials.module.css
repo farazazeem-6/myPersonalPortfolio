@@ -6,6 +6,13 @@
   flex-direction: column;
   align-items: center;
 }
+.testimonialInnerContainer {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .testHeading {
   font-size: 4rem;
   color: var(--white-color);

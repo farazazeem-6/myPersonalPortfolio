@@ -35,12 +35,14 @@ function ScrollDirectionMarquee() {
 
   return (
     <div className={styles.marqueeWrapper}>
-      <Marquee direction={direction} speed={speed}>
-        REACT JS | NEXT JS | TYPESCRIPT |
-      </Marquee>
-      <Marquee direction={direction === "left" ? "right" : "left"} speed={speed}>
-        REACT JS | NEXT JS | TYPESCRIPT |
-      </Marquee>
+      <div className={styles.marqueeInner}>
+        <Marquee direction={direction} speed={speed}>
+          REACT JS | NEXT JS | TYPESCRIPT |
+        </Marquee>
+        <Marquee direction={direction === "left" ? "right" : "left"} speed={speed}>
+          REACT JS | NEXT JS | TYPESCRIPT |
+        </Marquee>
+      </div>
     </div>
   );
 }

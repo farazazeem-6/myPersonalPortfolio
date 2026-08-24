@@ -4,16 +4,18 @@
   backdrop-filter: blur(10px) brightness(1.1);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
 }
 .resume_top {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
 }
 .skillBoxContainer {
-  max-width: 1400px;
+  max-width: 1440px;
   width: 100%;
 }
 .skillHeading {
@@ -78,6 +80,8 @@
 }
 .resumedown {
   margin-top: 50px;
+  max-width: 1440px;
+  width: 100%;
 }
 .boxes {
   display: grid;
