@@ -99,56 +99,58 @@ function Testimonials() {
 
   return (
     <div className={styles.testimonialOuterContainer}>
-      <RevealOnScroll>
-        <h1 className={styles.testHeading}>
-          Client <span className={styles.testText}> Testimonials</span>
-        </h1>
-      </RevealOnScroll>
+      <div className={styles.testimonialInnerContainer}>
+        <RevealOnScroll>
+          <h1 className={styles.testHeading}>
+            Client <span className={styles.testText}> Testimonials</span>
+          </h1>
+        </RevealOnScroll>
 
-      <RevealOnScroll delay={0.2}>
-        <div className={styles.testInfo}>
-          <p>
-            Don't just take my word for it. Here's what my clients have to say
-            about working with me and the results we've achieved together.
-          </p>
-          <AnimatedLine className={styles.testTextLine} />
+        <RevealOnScroll delay={0.2}>
+          <div className={styles.testInfo}>
+            <p>
+              Don't just take my word for it. Here's what my clients have to say
+              about working with me and the results we've achieved together.
+            </p>
+            <AnimatedLine className={styles.testTextLine} />
+          </div>
+        </RevealOnScroll>
+
+        <div className={styles.skillCalcs}>
+          <RevealOnScroll delay={0.1}>
+            <div className={styles.techCalcs}>
+              <p className={styles.numberText}>15+</p>
+              <p>Happy Clients</p>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll delay={0.1}>
+            <div className={styles.categoryCalcs}>
+              <p className={styles.numberText}>20+</p>
+              <p>Projects Completed</p>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll delay={0.1}>
+            <div className={styles.experienceCalcs}>
+              <p className={styles.numberText}>10+</p>
+              <p>Positive Reviews</p>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll delay={0.1}>
+            <div className={styles.projectsCalcs}>
+              <p className={styles.numberText}>1+</p>
+              <p>Years Experience</p>
+            </div>
+          </RevealOnScroll>
         </div>
-      </RevealOnScroll>
 
-      <div className={styles.skillCalcs}>
-        <RevealOnScroll delay={0.1}>
-          <div className={styles.techCalcs}>
-            <p className={styles.numberText}>15+</p>
-            <p>Happy Clients</p>
-          </div>
-        </RevealOnScroll>
-        <RevealOnScroll delay={0.1}>
-          <div className={styles.categoryCalcs}>
-            <p className={styles.numberText}>20+</p>
-            <p>Projects Completed</p>
-          </div>
-        </RevealOnScroll>
-        <RevealOnScroll delay={0.1}>
-          <div className={styles.experienceCalcs}>
-            <p className={styles.numberText}>10+</p>
-            <p>Positive Reviews</p>
-          </div>
-        </RevealOnScroll>
-        <RevealOnScroll delay={0.1}>
-          <div className={styles.projectsCalcs}>
-            <p className={styles.numberText}>1+</p>
-            <p>Years Experience</p>
-          </div>
-        </RevealOnScroll>
-      </div>
-
-      {/* Testimonials Marquee */}
-      <MarqueeDemo />
-      <div className={styles.testimonialsFooter}>
-        <p>Ready to join these satisfied clients?</p>
-        <button onClick={scrollToFooterCTA} className={styles.testimonialbtn}>
-          Start Your Project Today
-        </button>
+        {/* Testimonials Marquee */}
+        <MarqueeDemo />
+        <div className={styles.testimonialsFooter}>
+          <p>Ready to join these satisfied clients?</p>
+          <button onClick={scrollToFooterCTA} className={styles.testimonialbtn}>
+            Start Your Project Today
+          </button>
+        </div>
       </div>
     </div>
   );

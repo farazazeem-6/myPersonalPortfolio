@@ -3,14 +3,19 @@
   backdrop-filter: blur(100px);
 }
 .heroInnerContainer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 550px) minmax(0, 500px);
+  justify-content: center;
   align-items: center;
   padding: 8rem 10%;
-  gap: 35px;
+  gap: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .heroTextCont {
-  max-width: 700px;
+  max-width: 550px;
+  width: 100%;
 }
 .heroTextCont h1 {
   color: var(--white-color);
